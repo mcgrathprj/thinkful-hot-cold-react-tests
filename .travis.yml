@@ -2,6 +2,14 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: AoNAYN/QSZJ+G16doPATuqzQT7/9bhHchEJ9+g31l33d6XoXM6mCaT8EbkOwTezO3sz/XVgu7yuFTNI6tB+dVjeml5zsul9kfxLy/wWq9IslhC7jrZDb3BMRw497Z4btyUP+0bFPybz3nKTwz1SaqHo46LcAdJuwbxpWSL7HN+c+5mQmbMWjwZYIrbhdad7miSpqVEiAComYapPqkJIU6SIS7ygVY0bLIyRztHU9+LP8luqE1uVzv3n4nloaNLMYWVvusv52jD0CudY4AkYv9M2BP2BAXZgjrjiqWXtMESvL2VPCTGBuT3qNi79MfKm0yST/C2TqhQuJFU5nkwFMbp2pk7k3Mv9pbOSTrE12y8xZMww9odrPIkXwtPKLr+gGT3GMN+dEbyXxwbC8r794BOCFqBWPXPrqYitTRmQ7IZ9RB/WQbVIbE1PbuzFciIBn30b8UhBbLvZsmDtSkA36jrxhQ8ix6a1//ejkwBSbuPgayEAX0gahl3W9nSPf4vxtiQtowK4dcc2tyVCkyb+DAJSO+W6pEgRMN/Ygbv01h/+unjQOoCZVJUBjRRLtK7wDgEWvYSx91TChKUlsQrvRJAA4OvWZMskBCIB2U7gsOUn82zrlKe0kYv6ItW29fSBV1jQXA7Ml5oSAavO2QFvuKorgVtWJ0r7G1ddJQpSAk0E=
+  app: young-sands-29183
+  on:
+    repo: mcgrathprj/thinkful-hot-cold-react-tests
+
